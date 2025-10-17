@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses_APP</title>
+</head>
+<body>
+    <h1>مرحبًا بك في تطبيق Courses_APP 🚀</h1>
+</body>
+</html>
