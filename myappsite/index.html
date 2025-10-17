@@ -77,16 +77,13 @@
 
 <body>
   <div class="container">
-    <!-- شعار التطبيق -->
     <img src="https://i.imgur.com/7Q5i5Zb.png" alt="Courses_APP Logo" />
 
     <h1>تطبيق Courses_APP 📚</h1>
     <p>تعلم بسهولة أينما كنت — اكتشف الدورات وابدأ رحلتك التعليمية الآن 🚀</p>
 
     <!-- زر فتح التطبيق -->
-    <a href="https://coursesapp-site.onrender.com/open">
-      <button class="btn">فتح التطبيق 🚀</button>
-    </a>
+    <button class="btn" onclick="openApp()">فتح التطبيق 🚀</button>
 
     <!-- زر تحميل التطبيق -->
     <a href="app-debug.apk" download>
@@ -97,6 +94,17 @@
   <footer>
     © 2025 جميع الحقوق محفوظة لـ <strong>Courses_APP</strong>
   </footer>
+
+  <script>
+    function openApp() {
+      // نحاول فتح التطبيق
+      window.location.href = "intent://coursesapp-site.onrender.com#Intent;scheme=https;package=com.example.coursesapplication;end";
+
+      // إذا التطبيق غير مثبت، نحول المستخدم بعد ثانيتين إلى التحميل
+      setTimeout(function() {
+        window.location.href = "app-debug.apk";
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
-
